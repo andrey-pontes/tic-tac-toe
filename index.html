@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/hash.svg" type="image/x-icon">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <main data-theme="dark">
+        <section class="container">
+            <h1 class="title" id="title">Tic-Tac-Toe</h1>
+
+            <div class="areas" id="areas">
+                <div class="first-line">
+                    <div class="area"></div>
+                    <div class="area"></div>
+                    <div class="area"></div>
+                </div>
+                <div class="vertical-row-01"></div>
+                <div class="vertical-row-02"></div>
+                <div class="second-line">
+                    <div class="area"></div>
+                    <div class="area"></div>
+                    <div class="area"></div>
+                </div>
+                <div class="horizontal-row-01"></div>
+                <div class="horizontal-row-02"></div>
+                <div class="third-line">
+                    <div class="area"></div>
+                    <div class="area"></div>
+                    <div class="area"></div>
+                </div>
+            </div>
+            <div class="game-over hidden">
+            </div>
+            <div class="info-rules hidden">
+                <h2>Tic-Tac-Toe Rules</h2>
+                <ol>
+                    <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+                    <li>You are <span>X</span> and your friend is <span>O</span> . Players take turns putting their marks in empty squares.</li>
+                    <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+                    <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+                </ol>
+                <hr>
+                <h2>Regras Jogo da velha</h2>
+                <ol>
+                    <li>O jogo é jogado em uma grade de 3 quadrados por 3 quadrados.</li>
+                    <li>Você é o <span>X</span> e seu amigo é <span>O</span> . Os jogadores se revezam colocando suas marcas em quadrados vazios.</li>
+                    <li>O primeiro jogador a conseguir 3 de suas marcas consecutivas (para cima, para baixo, transversalmente ou diagonalmente) é o vencedor.</li>
+                    <li>Quando todos os 9 quadrados estiverem preenchidos, o jogo termina. Se nenhum jogador tiver 3 marcas consecutivas, o jogo termina empatado.</li>
+                </ol>
+                <button id="return-to-game">Return to Game</button>
+            </div>
+            <div class="btns" id="btns">
+                <button id="rules">Game Rules</button>
+                <button id="play-again" class="hidden">Play again</button>
+                <button id="themer-switcher">Switch Theme Dark/Light</button>
+            </div>
+        </section>
+        <footer>
+            Made with
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#f64348" stroke="#f64348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            by
+            <a href="https://github.com/andrey-pontes" target="_blank">@andrey-pontes</a>
+        </footer>
+        <script src="./js/script.js"></script>
+    </main>
+</body>
+</html>
